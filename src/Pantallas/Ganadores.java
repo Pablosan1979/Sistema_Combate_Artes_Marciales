@@ -15,21 +15,10 @@ import javax.swing.ImageIcon;
 public class Ganadores extends javax.swing.JFrame {
 
     /**
-     * Creates new form Inicio
+     * Creates new form Ganadores
      */
     public Ganadores() {
         initComponents();
-        this.setTitle("Sistema Combate Artes Marciales");
-        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/NIPPON.PNG"));
-        this.setIconImage(img);
-        lblLogo.setIcon(new ImageIcon(img.getScaledInstance(lblLogo.getWidth(), lblLogo.getHeight(), Image.SCALE_SMOOTH)));
-        this.setLocationRelativeTo(null);
-        
-        
-        Image img1 = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/Logo05.jpg"));
-        this.setIconImage(img1);
-        lblMarca.setIcon(new ImageIcon(img1.getScaledInstance(lblMarca.getWidth(), lblMarca.getHeight(), Image.SCALE_SMOOTH)));
-        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -41,23 +30,11 @@ public class Ganadores extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
         lblTitulo = new javax.swing.JLabel();
-        btnSalir = new javax.swing.JButton();
-        lblMarca = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(860, 600));
-        setUndecorated(true);
-        setResizable(false);
-
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.setMaximumSize(new java.awt.Dimension(860, 600));
-        jPanel1.setMinimumSize(new java.awt.Dimension(860, 600));
-        jPanel1.setPreferredSize(new java.awt.Dimension(860, 600));
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/NIPPON.png"))); // NOI18N
         lblLogo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -70,91 +47,63 @@ public class Ganadores extends javax.swing.JFrame {
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Sistema Combate Artes Marciales");
         lblTitulo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        lblTitulo.setMaximumSize(new java.awt.Dimension(640, 57));
+        lblTitulo.setMinimumSize(new java.awt.Dimension(640, 57));
+        lblTitulo.setPreferredSize(new java.awt.Dimension(640, 60));
 
-        btnSalir.setBackground(new java.awt.Color(153, 153, 153));
-        btnSalir.setForeground(new java.awt.Color(153, 153, 153));
-        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/deshacer.png"))); // NOI18N
-        btnSalir.setBorder(null);
-        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnSalir.setIconTextGap(10);
-        btnSalir.setMaximumSize(new java.awt.Dimension(80, 80));
-        btnSalir.setMinimumSize(new java.awt.Dimension(80, 80));
-        btnSalir.setPreferredSize(new java.awt.Dimension(80, 80));
-        btnSalir.setRequestFocusEnabled(false);
-        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+        btnRegresar.setBackground(new java.awt.Color(153, 153, 153));
+        btnRegresar.setForeground(new java.awt.Color(153, 153, 153));
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/deshacer.png"))); // NOI18N
+        btnRegresar.setBorder(null);
+        btnRegresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegresar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRegresar.setIconTextGap(10);
+        btnRegresar.setMaximumSize(new java.awt.Dimension(80, 80));
+        btnRegresar.setMinimumSize(new java.awt.Dimension(80, 80));
+        btnRegresar.setPreferredSize(new java.awt.Dimension(80, 80));
+        btnRegresar.setRequestFocusEnabled(false);
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirActionPerformed(evt);
+                btnRegresarActionPerformed(evt);
             }
         });
-
-        lblMarca.setMaximumSize(new java.awt.Dimension(80, 30));
-        lblMarca.setMinimumSize(new java.awt.Dimension(80, 30));
-        lblMarca.setPreferredSize(new java.awt.Dimension(80, 30));
-
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Ganadores");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(lblMarca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(80, 80, 80)
-                                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(20, 20, 20)
-                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 449, Short.MAX_VALUE)
-                .addComponent(lblMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 220, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         // TODO add your handling code here:
-        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/salir.png"));
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/deshacer.png"));
         this.setIconImage(img);
-        btnSalir.setIcon(new ImageIcon(img.getScaledInstance(btnSalir.getWidth(), btnSalir.getHeight(), Image.SCALE_SMOOTH)));
+        btnRegresar.setIcon(new ImageIcon(img.getScaledInstance(btnRegresar.getWidth(), btnRegresar.getHeight(), Image.SCALE_SMOOTH)));
         this.setLocationRelativeTo(null);
-        
+
         Inicio newFrame = new Inicio();
         newFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnSalirActionPerformed
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,7 +131,6 @@ public class Ganadores extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Ganadores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -193,11 +141,8 @@ public class Ganadores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel lblLogo;
-    private javax.swing.JLabel lblMarca;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }

@@ -71,15 +71,15 @@ public class Inicio extends javax.swing.JFrame {
         lblLogo.setPreferredSize(new java.awt.Dimension(80, 80));
 
         lblTitulo.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Sistema Combate Artes Marciales");
         lblTitulo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         btnSalir.setBackground(new java.awt.Color(153, 153, 153));
+        btnSalir.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         btnSalir.setForeground(new java.awt.Color(153, 153, 153));
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salir.png"))); // NOI18N
-        btnSalir.setBorder(null);
+        btnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSalir.setIconTextGap(10);
@@ -95,7 +95,6 @@ public class Inicio extends javax.swing.JFrame {
 
         btnRegistro.setBackground(new java.awt.Color(153, 153, 153));
         btnRegistro.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnRegistro.setForeground(new java.awt.Color(0, 0, 0));
         btnRegistro.setText("Registro Participantes");
         btnRegistro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -110,7 +109,6 @@ public class Inicio extends javax.swing.JFrame {
 
         btnTablaCombates.setBackground(new java.awt.Color(153, 153, 153));
         btnTablaCombates.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnTablaCombates.setForeground(new java.awt.Color(0, 0, 0));
         btnTablaCombates.setText("Tabla Combates");
         btnTablaCombates.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnTablaCombates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -125,7 +123,6 @@ public class Inicio extends javax.swing.JFrame {
 
         btnCombates.setBackground(new java.awt.Color(153, 153, 153));
         btnCombates.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnCombates.setForeground(new java.awt.Color(0, 0, 0));
         btnCombates.setText("Combates");
         btnCombates.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnCombates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -140,7 +137,6 @@ public class Inicio extends javax.swing.JFrame {
 
         btnGanadores.setBackground(new java.awt.Color(153, 153, 153));
         btnGanadores.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnGanadores.setForeground(new java.awt.Color(0, 0, 0));
         btnGanadores.setText("Ganadores");
         btnGanadores.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnGanadores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -158,7 +154,6 @@ public class Inicio extends javax.swing.JFrame {
         lblMarca.setPreferredSize(new java.awt.Dimension(80, 30));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Inicio");
 
