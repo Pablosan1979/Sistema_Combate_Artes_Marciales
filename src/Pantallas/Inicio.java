@@ -44,21 +44,21 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
         lblTitulo = new javax.swing.JLabel();
-        btnSalir = new javax.swing.JButton();
-        btnRegistro = new javax.swing.JButton();
-        btnTablaCombates = new javax.swing.JButton();
-        btnCombates = new javax.swing.JButton();
-        btnGanadores = new javax.swing.JButton();
         lblMarca = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        btnSalir = new javax.swing.JLabel();
+        btnParticipantes = new javax.swing.JLabel();
+        btnRegistro = new javax.swing.JLabel();
+        btnTabla_Combates = new javax.swing.JLabel();
+        btnCombates = new javax.swing.JLabel();
+        btnGanadores = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(860, 600));
         setMinimumSize(new java.awt.Dimension(860, 600));
         setUndecorated(true);
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setMaximumSize(new java.awt.Dimension(860, 600));
         jPanel1.setMinimumSize(new java.awt.Dimension(860, 600));
@@ -70,148 +70,145 @@ public class Inicio extends javax.swing.JFrame {
         lblLogo.setMinimumSize(new java.awt.Dimension(80, 80));
         lblLogo.setPreferredSize(new java.awt.Dimension(80, 80));
 
+        lblTitulo.setBackground(new java.awt.Color(116, 118, 138));
         lblTitulo.setFont(new java.awt.Font("Poppins", 1, 36)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(51, 51, 51));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("Sistema Combate Artes Marciales");
         lblTitulo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-
-        btnSalir.setBackground(new java.awt.Color(153, 153, 153));
-        btnSalir.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        btnSalir.setForeground(new java.awt.Color(153, 153, 153));
-        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salir.png"))); // NOI18N
-        btnSalir.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnSalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnSalir.setIconTextGap(10);
-        btnSalir.setMaximumSize(new java.awt.Dimension(80, 80));
-        btnSalir.setMinimumSize(new java.awt.Dimension(80, 80));
-        btnSalir.setPreferredSize(new java.awt.Dimension(80, 80));
-        btnSalir.setRequestFocusEnabled(false);
-        btnSalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirActionPerformed(evt);
-            }
-        });
-
-        btnRegistro.setBackground(new java.awt.Color(153, 153, 153));
-        btnRegistro.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnRegistro.setText("Registro Participantes");
-        btnRegistro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        btnRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRegistro.setMaximumSize(new java.awt.Dimension(150, 50));
-        btnRegistro.setMinimumSize(new java.awt.Dimension(150, 50));
-        btnRegistro.setPreferredSize(new java.awt.Dimension(150, 50));
-        btnRegistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistroActionPerformed(evt);
-            }
-        });
-
-        btnTablaCombates.setBackground(new java.awt.Color(153, 153, 153));
-        btnTablaCombates.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnTablaCombates.setText("Tabla Combates");
-        btnTablaCombates.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        btnTablaCombates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnTablaCombates.setMaximumSize(new java.awt.Dimension(150, 50));
-        btnTablaCombates.setMinimumSize(new java.awt.Dimension(150, 50));
-        btnTablaCombates.setPreferredSize(new java.awt.Dimension(150, 50));
-        btnTablaCombates.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTablaCombatesActionPerformed(evt);
-            }
-        });
-
-        btnCombates.setBackground(new java.awt.Color(153, 153, 153));
-        btnCombates.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnCombates.setText("Combates");
-        btnCombates.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        btnCombates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnCombates.setMaximumSize(new java.awt.Dimension(150, 50));
-        btnCombates.setMinimumSize(new java.awt.Dimension(150, 50));
-        btnCombates.setPreferredSize(new java.awt.Dimension(150, 50));
-        btnCombates.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCombatesActionPerformed(evt);
-            }
-        });
-
-        btnGanadores.setBackground(new java.awt.Color(153, 153, 153));
-        btnGanadores.setFont(new java.awt.Font("Poppins", 1, 18)); // NOI18N
-        btnGanadores.setText("Ganadores");
-        btnGanadores.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        btnGanadores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnGanadores.setMaximumSize(new java.awt.Dimension(150, 50));
-        btnGanadores.setMinimumSize(new java.awt.Dimension(150, 50));
-        btnGanadores.setPreferredSize(new java.awt.Dimension(150, 50));
-        btnGanadores.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGanadoresActionPerformed(evt);
-            }
-        });
 
         lblMarca.setMaximumSize(new java.awt.Dimension(80, 30));
         lblMarca.setMinimumSize(new java.awt.Dimension(80, 30));
         lblMarca.setPreferredSize(new java.awt.Dimension(80, 30));
 
         jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Inicio");
+
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrar-sesion.png"))); // NOI18N
+        btnSalir.setToolTipText("Salir");
+        btnSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSalir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnSalirMouseClicked(evt);
+            }
+        });
+
+        btnParticipantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/kendo.png"))); // NOI18N
+        btnParticipantes.setToolTipText("Participantes");
+        btnParticipantes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnParticipantes.setMaximumSize(new java.awt.Dimension(110, 90));
+        btnParticipantes.setMinimumSize(new java.awt.Dimension(110, 90));
+        btnParticipantes.setPreferredSize(new java.awt.Dimension(110, 90));
+        btnParticipantes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnParticipantesMouseClicked(evt);
+            }
+        });
+
+        btnRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/nota.png"))); // NOI18N
+        btnRegistro.setLabelFor(btnRegistro);
+        btnRegistro.setToolTipText("Registro");
+        btnRegistro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRegistro.setMaximumSize(new java.awt.Dimension(110, 90));
+        btnRegistro.setMinimumSize(new java.awt.Dimension(110, 90));
+        btnRegistro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnRegistroMouseClicked(evt);
+            }
+        });
+
+        btnTabla_Combates.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/kendo1.png"))); // NOI18N
+        btnTabla_Combates.setToolTipText("Combates");
+        btnTabla_Combates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnTabla_Combates.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnTabla_CombatesMouseClicked(evt);
+            }
+        });
+
+        btnCombates.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/kendo2.png"))); // NOI18N
+        btnCombates.setToolTipText("Tabla Combates");
+        btnCombates.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCombates.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCombatesMouseClicked(evt);
+            }
+        });
+
+        btnGanadores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/podio.png"))); // NOI18N
+        btnGanadores.setToolTipText("Ganadores");
+        btnGanadores.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGanadores.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnGanadoresMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(lblMarca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(86, 86, 86)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 674, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(80, 80, 80)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(6, 6, 6)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(btnCombates, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGap(176, 176, 176)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(btnTablaCombates, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
-                                            .addComponent(btnGanadores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE)))))
-                        .addGap(20, 20, 20)
-                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(110, 110, 110)
+                        .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addComponent(btnParticipantes, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(54, 54, 54)
+                        .addComponent(btnTabla_Combates, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(63, 63, 63)
+                        .addComponent(btnCombates, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(79, 79, 79)
+                        .addComponent(btnGanadores, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 680, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(89, 89, 89)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnTablaCombates, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(157, 157, 157)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCombates, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGanadores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                .addComponent(lblMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblLogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(145, 145, 145)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnCombates, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnGanadores, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnRegistro, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnTabla_Combates, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addComponent(btnParticipantes, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(194, 194, 194)
+                .addComponent(lblMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
+
+        btnTabla_Combates.getAccessibleContext().setAccessibleName("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -227,43 +224,71 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-        // TODO add your handling code here:
-        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/salir.png"));
+    private void btnSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSalirMouseClicked
+       
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/cerrar-sesion.png"));
         this.setIconImage(img);
         btnSalir.setIcon(new ImageIcon(img.getScaledInstance(btnSalir.getWidth(), btnSalir.getHeight(), Image.SCALE_SMOOTH)));
         this.setLocationRelativeTo(null);
         
         System.exit(0);
-    }//GEN-LAST:event_btnSalirActionPerformed
+    }//GEN-LAST:event_btnSalirMouseClicked
 
-    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
+    private void btnParticipantesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnParticipantesMouseClicked
         // TODO add your handling code here:
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/kendo.png"));
+        this.setIconImage(img);
+        btnParticipantes.setIcon(new ImageIcon(img.getScaledInstance(btnParticipantes.getWidth(), btnParticipantes.getHeight(), Image.SCALE_SMOOTH)));
+        this.setLocationRelativeTo(null);
+        
+        Tabla_Participantes newFrame = new Tabla_Participantes();
+        newFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnParticipantesMouseClicked
+
+    private void btnRegistroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegistroMouseClicked
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/nota.png"));
+        this.setIconImage(img);
+        btnRegistro.setIcon(new ImageIcon(img.getScaledInstance(btnRegistro.getWidth(), btnRegistro.getHeight(), Image.SCALE_SMOOTH)));
+        this.setLocationRelativeTo(null);
+        
         Registro newFrame = new Registro();
         newFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnRegistroActionPerformed
+    }//GEN-LAST:event_btnRegistroMouseClicked
 
-    private void btnTablaCombatesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTablaCombatesActionPerformed
-        // TODO add your handling code here:
+    private void btnTabla_CombatesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTabla_CombatesMouseClicked
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/kendo1.png"));
+        this.setIconImage(img);
+        btnTabla_Combates.setIcon(new ImageIcon(img.getScaledInstance(btnTabla_Combates.getWidth(), btnTabla_Combates.getHeight(), Image.SCALE_SMOOTH)));
+        this.setLocationRelativeTo(null);
+        
         Tabla_Combates newFrame = new Tabla_Combates();
         newFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnTablaCombatesActionPerformed
+    }//GEN-LAST:event_btnTabla_CombatesMouseClicked
 
-    private void btnCombatesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCombatesActionPerformed
-        // TODO add your handling code here:
+    private void btnCombatesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCombatesMouseClicked
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/kendo2.png"));
+        this.setIconImage(img);
+        btnCombates.setIcon(new ImageIcon(img.getScaledInstance(btnCombates.getWidth(), btnCombates.getHeight(), Image.SCALE_SMOOTH)));
+        this.setLocationRelativeTo(null);
+        
         Combates newFrame = new Combates();
         newFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnCombatesActionPerformed
+    }//GEN-LAST:event_btnCombatesMouseClicked
 
-    private void btnGanadoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGanadoresActionPerformed
-        // TODO add your handling code here:
+    private void btnGanadoresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnGanadoresMouseClicked
+        Image img = Toolkit.getDefaultToolkit().createImage(getClass().getResource("/Imagenes/podio.png"));
+        this.setIconImage(img);
+        btnGanadores.setIcon(new ImageIcon(img.getScaledInstance(btnGanadores.getWidth(), btnGanadores.getHeight(), Image.SCALE_SMOOTH)));
+        this.setLocationRelativeTo(null);
+        
         Ganadores newFrame = new Ganadores();
         newFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_btnGanadoresActionPerformed
+    }//GEN-LAST:event_btnGanadoresMouseClicked
 
     /**
      * @param args the command line arguments
@@ -291,6 +316,9 @@ public class Inicio extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -301,11 +329,12 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCombates;
-    private javax.swing.JButton btnGanadores;
-    private javax.swing.JButton btnRegistro;
-    private javax.swing.JButton btnSalir;
-    private javax.swing.JButton btnTablaCombates;
+    private javax.swing.JLabel btnCombates;
+    private javax.swing.JLabel btnGanadores;
+    private javax.swing.JLabel btnParticipantes;
+    private javax.swing.JLabel btnRegistro;
+    private javax.swing.JLabel btnSalir;
+    private javax.swing.JLabel btnTabla_Combates;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblLogo;
